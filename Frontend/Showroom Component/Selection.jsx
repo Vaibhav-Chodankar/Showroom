@@ -35,7 +35,7 @@ class Selection extends React.Component {
         }
 
         return (
-            <div>
+            <div className='container'>
                 <table border="1" class="table">
                     <thead>
                         <tr>

@@ -52,29 +52,29 @@ class Insert extends React.Component {
         }
 
         return (
-            <div>
+            <div className='container'>
                 <form onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="CompanyName">Company Name</label>
-                        <input type="text" name="CompanyName" id="CompanyName" value={this.state.CompanyName} onChange={handleCompanyNameChange} required />
+                    <div className='my-2'>
+                        <label className='fs-5' htmlFor="CompanyName">Company Name</label>
+                        <input className='form-control' type="text" name="CompanyName" id="CompanyName" value={this.state.CompanyName} onChange={handleCompanyNameChange} required />
                     </div>
-                    <div>
-                        <label htmlFor="Model">Model</label>
-                        <input type="text" name="Model" id="Model" value={this.state.Model} onChange={handleModelChange} required />
+                    <div className='my-2'>
+                        <label className='fs-5' htmlFor="Model">Model</label>
+                        <input className='form-control' type="text" name="Model" id="Model" value={this.state.Model} onChange={handleModelChange} required />
                     </div>
-                    <div>
-                        <label htmlFor="EngineType">Engine Type</label>
-                        <input type="text" name="EngineType" id="EngineType" value={this.state.EngineType} onChange={handleEngineTypeChange} required />
+                    <div className='my-2'>
+                        <label className='fs-5' htmlFor="EngineType">Engine Type</label>
+                        <input className='form-control' type="text" name="EngineType" id="EngineType" value={this.state.EngineType} onChange={handleEngineTypeChange} required />
                     </div>
-                    <div>
-                        <label htmlFor="Turbos">Turbos</label>
-                        <input type="text" name="Turbos" id="Turbos" value={this.state.Turbos} onChange={handleTurbosChange} required />
+                    <div className='my-2'>
+                        <label className='fs-5' htmlFor="Turbos">Turbos</label>
+                        <input className='form-control' type="text" name="Turbos" id="Turbos" value={this.state.Turbos} onChange={handleTurbosChange} required />
                     </div>
-                    <div>
-                        <label htmlFor="Year">Year</label>
-                        <input type="number" name="Year" id="Year" value={this.state.Year} onChange={handleYearChange} required />
+                    <div className='my-2'>
+                        <label className='fs-5' htmlFor="Year">Year</label>
+                        <input className='form-control' type="number" name="Year" id="Year" value={this.state.Year} onChange={handleYearChange} required />
                     </div>
-                    <div>
+                    <div className='my-3'>
                         <button className='btn btn-primary'>Update</button>
                     </div>
                 </form>
